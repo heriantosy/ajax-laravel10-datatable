@@ -1,0 +1,23 @@
+Sumber Link
+------------------
+
+https://datatables.net/
+1. CSS = //cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css
+2. JS = //cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js
+3. Inisalisasi DataTables  
+   let table = new DataTable('#myTable');
+4. Sumber jquery
+   https://releases.jquery.com/
+5. Install Datatabels 
+   composer require yajra/laravel-datatables-oracle:"^10.3.1"
+    'providers' => [
+        // ...
+        Yajra\DataTables\DataTablesServiceProvider::class,
+    ],
+
+    php artisan vendor:publish --tag=datatables
+
+    Note:
+    -------------
+    Lengkapi Model bagian protected $fillable = [ 'nama_pegawai', 'alamat', 'email' ];
+
